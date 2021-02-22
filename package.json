@@ -1,0 +1,40 @@
+{
+  "name": "@ali_nawaz/style-kit",
+  "version": "1.0.1",
+  "description": "This package contain many helpful function and tools for styling you ui",
+  "main": "lib/index.js",
+  "types": "lib",
+  "scripts": {
+    "build": "tsx -p .",
+    "watch": "npx tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zeal29/stylekit.git"
+  },
+  "keywords": [
+    "styleKit",
+    "stylekit",
+    "css",
+    "styled",
+    "components",
+    "ts",
+    "tsx",
+    "js",
+    "html",
+    "alinawaz",
+    "ali",
+    "nawaz",
+    "zeal29"
+  ],
+  "author": "Zeal29 (Ali Nawaz)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zeal29/stylekit/issues"
+  },
+  "homepage": "https://github.com/Zeal29/stylekit#readme",
+  "dependencies": {
+    "resize-observer-polyfill": "^1.5.1",
+    "typescript": "^4.1.5"
+  }
+}
