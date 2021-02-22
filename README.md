@@ -57,8 +57,8 @@ import styled from "styled-components";
 const Box = styled.div`
 	background-color: hsl(${intpW("", [320, 0], [1920, 360])}, 90%, 50%);
 
-	height: 50px;
-	width: 50px;
+	height: ${intpW("px", [320, 50], [1920, 100])};
+	width: ${intpW("px", [320, 50], [1920, 100])};
 `;
 
 function App() {
