@@ -7,7 +7,7 @@ This package contain many helpfull function and tools for styling you ui
 `
 
 # Setup
-in the main.ts or main.js or what ever you most starting point of you app is import the setup function and run it like this if it is react app
+in you main.ts or main.js file or what ever the most starting point of you app, Import the setup function and run it, If it is react app then.
 
 ```import React from "react";
 import ReactDOM from "react-dom";
@@ -77,5 +77,32 @@ function App() {
 export default App;
 
 ```
-
 this is just a dummy example i will update the readme late
+
+
+
+what is intpW function is?
+```
+intpW("px", [320, 50], [1920, 100])
+```
+the first parameter is the unit and the second paramete is an array of tupels [number,number]
+note: currently i only support 2 tupels instead of array of tupels i will update it in few days with new formula
+
+what does it do?
+
+the function will spit out a css equation which will be eveluated to 50px if the current screen size is smaller or equal to 320px or 100px if it is equalt to 1920px or greater. Other whise if screen width is in the middle of 320px - 1920px the it will eveluate according to the interpolated value by the formula
+
+
+y <= output value
+x <= current screen width
+x1 <= 320px
+x2 <= 1920px
+y1 <= 50px
+y2 <= 100px
+
+`y = y1 + ((x – x1) / (x2 – x1)) * (y2 – y1)`
+
+
+
+
+
