@@ -1,12 +1,13 @@
 # stylekit
+
 This package contain many helpfull function and tools for styling you ui
 
 # installation
 
-`npm i @ali_nawaz/style-kit
-`
+`npm i @ali_nawaz/style-kit `
 
 # Setup
+
 in you main.ts or main.js file or what ever the most starting point of you app, Import the setup function and run it, If it is react app then.
 
 ```import React from "react";
@@ -26,9 +27,9 @@ ReactDOM.render(
 );
 ```
 
-
 # Usage
-it is ment to be use with styled components like that 
+
+it is ment to be use with styled components like that
 
 ```
 import { intpW } from "@alinawaz/stylekit";
@@ -77,21 +78,20 @@ function App() {
 export default App;
 
 ```
+
 this is just a dummy example i will update the readme late
 
-
-
 what is intpW function is?
+
 ```
 intpW("px", [320, 50], [1920, 100])
 ```
-the first parameter is the unit and the second paramete is an array of tupels [number,number]
-note: currently i only support 2 tupels instead of array of tupels i will update it in few days with new formula
+
+the first parameter is the unit and the second parameter is an array of tuples [number,number] and you and add as many break points as you whish
 
 what does it do?
 
-the function will spit out a css equation which will be eveluated to 50px if the current screen size is smaller or equal to 320px or 100px if it is equalt to 1920px or greater. Other whise if screen width is in the middle of 320px - 1920px the it will eveluate according to the interpolated value by the formula
-
+the function will spit out a css equation which will be evaluated to 50px if the current screen size is smaller or equal to 320px or 100px if it is equals to 1920px or greater. Other wise if screen width is in the middle of 320px - 1920px the it will evaluate according to the interpolated value by the formula
 
 y <= output value
 x <= current screen width
@@ -101,8 +101,3 @@ y1 <= 50px
 y2 <= 100px
 
 `y = y1 + ((x – x1) / (x2 – x1)) * (y2 – y1)`
-
-
-
-
-
