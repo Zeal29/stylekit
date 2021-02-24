@@ -1,2 +1,2 @@
-export { intpW, setup } from "./init";
+export { intpW, setup, intpH } from "./init";
 //# sourceMappingURL=index.d.ts.map

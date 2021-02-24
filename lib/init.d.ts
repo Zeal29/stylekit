@@ -1,6 +1,7 @@
 export declare type AlphaNumeric = number | string;
 export declare function setup(): void;
 export declare function intpW(unit?: string, ...breakPoints: [number, number][]): string;
+export declare function intpH(unit?: string, ...breakPoints: [number, number][]): string;
 /**
  * we can use this function css
  * if a is greater then it return 1

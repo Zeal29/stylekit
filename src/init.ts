@@ -30,15 +30,9 @@ function intpPart(x: string, x1: number, x2: number, v1: number, v2: number, uni
 	return `clamp(${min}${unit}, (${intp(x, x1, x2, v1, v2)} * 1${unit}), ${max}${unit}) `;
 }
 
-export function intpW(
-	unit: string = "px",
-
-	...breakPoints: [number, number][]
-) {
+function intpScreen(unit: string = "px", x: string, ...breakPoints: [number, number][]) {
 	if (breakPoints.length < 2) throw new Error("there must be more then 1 break point to work.");
 	debugger;
-
-	let x = "var(--screen-x)";
 
 	let equation = "calc(";
 
@@ -65,6 +59,18 @@ export function intpW(
 	equation += " )";
 
 	return equation;
+}
+
+export function intpW(unit: string = "px", ...breakPoints: [number, number][]) {
+	let x = "var(--screen-x)";
+
+	return intpScreen(unit, x, ...breakPoints);
+}
+
+export function intpH(unit: string = "px", ...breakPoints: [number, number][]) {
+	let y = "var(--screen-y)";
+
+	return intpScreen(unit, y, ...breakPoints);
 }
 
 /**
