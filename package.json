@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "types": "lib",
   "scripts": {
-    "build": "tsx -p .",
+    "build": "npx tsx -p .",
     "watch": "npx tsc -w"
   },
   "repository": {
