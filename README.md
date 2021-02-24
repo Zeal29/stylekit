@@ -4,13 +4,16 @@ This package contain many helpfull function and tools for styling you ui
 
 # installation
 
-`npm i @ali_nawaz/style-kit `
+```bash
+npm i @ali_nawaz/style-kit
+```
 
 # Setup
 
 in you main.ts or main.js file or what ever the most starting point of you app, Import the setup function and run it, If it is react app then.
 
-```import React from "react";
+```javascript
+import React from "react";
 import ReactDOM from "react-dom";
 import { setup } from "@ali_nawaz/style-kit";
 
@@ -31,7 +34,7 @@ ReactDOM.render(
 
 it is ment to be use with styled components like that
 
-```
+```javascript
 import { intpW } from "@alinawaz/stylekit";
 
 import styled from "styled-components";
@@ -47,7 +50,7 @@ const Box = styled.div`
 
 the full code of can be look like
 
-```
+```javascript
 import React, { useState } from "react";
 import "./App.css";
 
@@ -83,11 +86,11 @@ this is just a dummy example i will update the readme late
 
 what is intpW function is?
 
-```
+```javascript
 intpW("px", [320, 50], [1920, 100])
 ```
 
-the first parameter is the unit and the second parameter is an array of tuples [number,number] and you and add as many break points as you whish
+The first parameter is the unit and the second parameter is an array of tuples [number,number] and you can add as many break points as you whish.
 
 what does it do?
 
