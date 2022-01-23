@@ -32,7 +32,6 @@ function intpPart(x: string, x1: number, x2: number, v1: number, v2: number, uni
 
 function intpScreen(unit: string = "px", x: string, ...breakPoints: [number, number][]) {
 	if (breakPoints.length < 2) throw new Error("there must be more then 1 break point to work.");
-	debugger;
 
 	let equation = "calc(";
 
